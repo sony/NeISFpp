@@ -14,8 +14,11 @@ and Yusuke Moriuchi<sup>1</sup>
 
 This project is the implementation of "NeISF++: Neural Incident Stokes Field for Polarized Inverse Rendering of Conductors and Dielectrics", which is a novel multi-view polarized inverse rendering framework that supports both conductors and dielectrics.
 
-### [Paper](https://arxiv.org/abs/2411.10189) | [Data]() | [Project page]() <!-- omit in toc -->
+### [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Li_NeISF_Neural_Incident_Stokes_Field_for_Polarized_Inverse_Rendering_of_CVPR_2025_paper.html) | [Data](https://sonyjpn.sharepoint.com/sites/S110-NeISFpp) | [Project page](https://sony.github.io/NeISFpp/) <!-- omit in toc -->
 
+A Microsoft account is required to download the [data](https://sonyjpn.sharepoint.com/sites/S110-NeISFpp). If you do not have an account, please create one first and access the [link](https://sonyjpn.sharepoint.com/sites/S110-NeISFpp). After a certain amount of time, the access rights will be granted and you will be able to download the data. Please note that your account information will not be retained.
+
+If the procedure above does not work, please send a message to takeshi.uemori@sony.com.
 
 ## Table of Contents <!-- omit in toc -->
 - [Dependencies](#dependencies)
@@ -254,10 +257,12 @@ This software is released under the MIT License. See [LICENSE](./LICENSE) for de
 
 ## Citation
 ```
-@article{li2024neisf++,
+@InProceedings{Li_NeISFpp_CVPR2025,
   title={NeISF++: Neural Incident Stokes Field for Polarized Inverse Rendering of Conductors and Dielectrics},
   author={Li, Chenhao and Ono, Taishi and Uemori, Takeshi and Nitta, Sho and Mihara, Hajime and Gatto, Alexander and Nagahara, Hajime and Moriuchi, Yusuke},
-  journal={arXiv preprint arXiv:2411.10189},
-  year={2024}
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month={June},
+  year={2025},
+  pages={26493-26503}
 }
 ```
