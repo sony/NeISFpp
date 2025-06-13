@@ -142,7 +142,7 @@ Run the following command:
  2. Run the following command:
 
  ```
- $ python generate_relighting_image.py {YOUR RESULT FOLDER} {TARGET FOLDER} {EPOCH NUM} {ENV MAP NAME} -b {B SIZE} -l {SAMPLE ILLUM NUM}
+ $ python generate_relighting_image.py {RESULT FOLDER NAME} {IMAGE FOLDER NAME} {EPOCH NUM} {ENV MAP NAME} -b {B SIZE} -l {SAMPLE ILLUM NUM}
  ```
 <!--exporting blender files is not supported for NeISF++ -->
  <!--### Exporting UV textures and Blender rendered animation
