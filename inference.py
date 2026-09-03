@@ -31,7 +31,7 @@ parser.add_argument("epoch_num", type=int)
 parser.add_argument("-b", "--batch_size", type=int, default=1000)
 parser.add_argument(
     "--illum_sample_num", type=int, default=None,
-    help="the number of sample for illumination. only for TrainerNeISF or TrainerNeISFNoStokes"
+    help="the number of samples for illumination. only for TrainerNeISF or TrainerNeISFNoStokes"
 )
 
 

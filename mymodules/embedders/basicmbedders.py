@@ -87,7 +87,7 @@ class FourierFeatureEmbedder(Embedder):
     def __init__(self, in_size: int, enc_size: int, sigma: float, device: torch.device):
         """
         Args:
-            in_size (int): the number of input dimension.
+            in_size (int): the number of input dimensions.
             enc_size (int): the number of dimensions the B matrix maps to.
             sigma (float): sigma of Gaussian distribution.
             device (torch.device): the device you want to use.
@@ -107,7 +107,7 @@ class FourierFeatureEmbedder(Embedder):
 
     @staticmethod
     def sample_b(sigma: float, size: tuple, device: torch.device) -> torch.Tensor:
-        r"""Matrix of size :attr:`size` sampled from from :math:`\mathcal{N}(0, \sigma^2)`
+        r"""Matrix of size :attr:`size` sampled from :math:`\mathcal{N}(0, \sigma^2)`
         Args:
             sigma (float): standard deviation.
             size (tuple): size of the matrix sampled.
