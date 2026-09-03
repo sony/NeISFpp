@@ -58,7 +58,7 @@ if __name__ == '__main__':
     # change the coordinate
     poses_all = np.concatenate([poses_all[..., 1:2], -poses_all[..., :1], poses_all[..., 2:4]], -1)  # (n, 3, 4)
 
-    # calculate the canter and normalization matrix
+    # calculate the center and normalization matrix
     center = renderutils.get_center_point(poses_all)
     normalization_mat = renderutils.get_average_poses(poses_all)
 

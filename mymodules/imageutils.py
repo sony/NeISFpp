@@ -8,7 +8,7 @@ http://opensource.org/licenses/mit-license.php
 
 from pathlib import Path
 import os
-os.environ["OPENCV_IO_ENABLE_OPENEXR"] = "1"  # Note: this must be called before importing Opencv.
+os.environ["OPENCV_IO_ENABLE_OPENEXR"] = "1"  # Note: this must be called before importing OpenCV.
 
 import numpy as np
 import cv2
@@ -81,7 +81,7 @@ def my_write_image(img_path: Path, img: np.ndarray, max_val: float, min_val: flo
     if img.shape[2] != 3:
         raise ValueError("the image must have RGB channels.")
     if np.min(img) < min_val or np.max(img) > max_val:
-        raise ValueError("Your input array's range doesn't match to 16bit.")
+        raise ValueError("Your input array's range doesn't match 16bit.")
 
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     return cv2.imwrite(str(img_path), img.astype(astype))
@@ -179,7 +179,7 @@ def my_write_plt_fig(plt_fig: Figure, img_path: Path):
 
 
 def rgb_to_srgb(img: np.ndarray) -> np.ndarray:
-    """ Convert the image's color space from liner-RGB to sRGB.
+    """ Convert the image's color space from linear-RGB to sRGB.
 
     Args:
           img (np.ndarray): input image. color space must be linear-RGB.

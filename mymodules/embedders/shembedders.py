@@ -123,12 +123,12 @@ class SHEmbedder(Embedder):
 
     @staticmethod
     def get_sh_dim(sh_coords: tuple) -> int:
-        """ Compute the number of dimension of SH.
+        """ Compute the number of dimensions of SH.
 
         Args:
             sh_coords (tuple): which dimension you want to use.
         Returns:
-            (Tensor) the number of dimension after the SH embedding.
+            (Tensor) the number of dimensions after the SH embedding.
         """
 
         sh_dim = 0

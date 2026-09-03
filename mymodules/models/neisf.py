@@ -15,7 +15,7 @@ from .neilf import SIRENLayer
 
 
 class IncidentNet(nn.Module):
-    """ this is an MLP for estimating a position-dependent stokes vector.
+    """ this is an MLP for estimating a position-dependent Stokes vector.
     Implementation is modified from: https://github.com/apple/ml-neilf/blob/b1fd650f283b2207981596e0caba7419238599c9/code/model/nn_arch.py#L114
 
     Attributes:
@@ -63,7 +63,7 @@ class IncidentNet(nn.Module):
                     layer.linear = nn.utils.weight_norm(layer.linear)
                 else:
                     raise ValueError("all the weights are initialized to be zero. "
-                                     "weight normalization could produce`nan`value.")
+                                     "weight normalization could produce `nan` value.")
 
             setattr(self, "layer_{}".format(i), layer)
 
@@ -130,7 +130,7 @@ class BRDFNet(nn.Module):
                     layer.linear = nn.utils.weight_norm(layer.linear)
                 else:
                     raise ValueError("all the weights are initialized to be zero. "
-                                     "weight normalization could produce`nan`value.")
+                                     "weight normalization could produce `nan` value.")
 
             setattr(self, "layer_{}".format(i), layer)
 

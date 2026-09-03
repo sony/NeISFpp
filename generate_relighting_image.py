@@ -1,5 +1,5 @@
 # generate_relighting_image.py
-""" Run this script for training.
+""" Run this script for relighting.
 
 Copyright (c) 2025 Sony Semiconductor Solutions Corporation
 This software is released under the MIT License.

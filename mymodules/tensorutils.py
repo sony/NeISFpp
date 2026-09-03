@@ -66,7 +66,7 @@ def dot_product_tensor(vec1: Tensor, vec2: Tensor) -> Tensor:
 
 
 def calc_rot_mat_from_two_vec(vec1: Tensor, vec2: Tensor) -> Tensor:
-    """ Compute a rotation matrix of shape (n, 3, 3), which rotates the second input Tensor to the first one.
+    """ Compute a rotation matrix of shape (n, 3, 3), which rotates the first input Tensor to the second one.
 
     For the implementation, refer to:
         https://math.stackexchange.com/questions/180418/calculate-rotation-matrix-to-align-vector-a-to-vector-b-in-3d/476311#476311
